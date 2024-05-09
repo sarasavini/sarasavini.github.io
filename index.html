@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sara Savini - PhD Candidate</title>
+    <title>Your Name - Researcher</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -13,89 +13,133 @@
             background-color: #f4f4f4;
             color: #333;
         }
-        .sidebar {
-            width: 200px;
-            background: #333;
-            color: #fff;
-            height: 100vh;
-            position: fixed;
-            overflow: auto;
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
         }
-        .sidebar a {
-            color: #fff;
-            padding: 10px 15px;
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #e8491d 3px solid;
+        }
+        header a {
+            color: #ffffff;
             text-decoration: none;
-            display: block;
+            text-transform: uppercase;
+            font-size: 16px;
         }
-        .sidebar a:hover {
-            background: #FF8C00;
+        header ul {
+            padding: 0;
+            list-style: none;
         }
-        .main-content {
-            margin-left: 200px;
-            padding: 20px;
+        header li {
+            float: left;
+            display: inline;
+            padding: 0 20px 0 20px;
         }
-        .card {
-            background: #fff;
-            margin-bottom: 20px;
-            padding: 20px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        header #branding {
+            float: left;
+        }
+        header #branding h1 {
+            margin: 0;
+        }
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+        header .highlight, header .current a {
+            color: #e8491d;
+            font-weight: bold;
+        }
+        header a:hover {
+            color: #ffffff;
+            font-weight: bold;
+        }
+        .banner {
+            padding: 80px 0;
+            color: #ffffff;
+            background: url('banner-bg.jpg') no-repeat 0px -400px;
+            background-size: cover;
+            text-align: center;
+        }
+        .banner h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        .banner p {
+            font-size: 1.3em;
         }
         footer {
-            background-color: #333;
-            color: #fff;
+            padding: 20px;
+            color: #ffffff;
+            background-color: #35424a;
             text-align: center;
-            position: fixed;
-            bottom: 0;
-            width: calc(100% - 200px);
-            margin-left: 200px;
-            padding: 10px 0;
+        }
+        footer p {
+            margin: 0;
         }
     </style>
 </head>
 <body>
-    <div class="sidebar">
-        <h1 style="color: #FF8C00; text-align: center;">Menu</h1>
-        <a href="#about">About</a>
-        <a href="#research">Research</a>
-        <a href="#publications">Publications</a>
-        <a href="#contact">Contact</a>
-    </div>
-
-    <div class="main-content">
-        <div class="card" id="about">
-            <h2>About Me</h2>
-            <p>I am a passionate researcher in Economics of Innovation with a focus on technology diffusion among space and time.</p>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">Your Name</span> Researcher</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class="current"><a href="#about">About</a></li>
+                    <li><a href="#research">Research</a></li>
+                    <li><a href="#publications">Publications</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
+    </header>
 
-        <div class="card" id="research">
-            <h2>My Research</h2>
-            <p>My research aims to [Your Research Goals]. Here are some of the projects I'm currently working on:</p>
-            <ul>
-                <li>[Project 1]</li>
-                <li>[Project 2]</li>
-                <li>[Project 3]</li>
-            </ul>
+    <section class="banner">
+        <div class="container">
+            <h1>Welcome to My Research Page</h1>
+            <p>Discovering the unknown, one study at a time.</p>
         </div>
+    </section>
 
-        <div class="card" id="publications">
-            <h2>Publications</h2>
-            <p>Throughout my career, I've had the opportunity to contribute to various publications:</p>
-            <ul>
-                <li>[Publication 1]</li>
-                <li>[Publication 2]</li>
-                <li>[Publication 3]</li>
-            </ul>
-        </div>
+    <section class="container" id="about">
+        <h2>About Me</h2>
+        <p>I am a passionate researcher in [Your Field] with a focus on [Your Research Interests]. With a background in [Your Background], I bring a unique perspective to my work.</p>
+    </section>
 
-        <div class="card" id="contact">
-            <h2>Contact</h2>
-            <p>If you're interested in collaborating or learning more about my work, please reach out:</p>
-            <p>Email: ssavini@uninsubria.it </p>
-        </div>
-    </div>
+    <section class="container" id="research">
+        <h2>My Research</h2>
+        <p>My research aims to [Your Research Goals]. Here are some of the projects I'm currently working on:</p>
+        <ul>
+            <li>[Project 1]</li>
+            <li>[Project 2]</li>
+            <li>[Project 3]</li>
+        </ul>
+    </section>
+
+    <section class="container" id="publications">
+        <h2>Publications</h2>
+        <p>Throughout my career, I've had the opportunity to contribute to various publications:</p>
+        <ul>
+            <li>[Publication 1]</li>
+            <li>[Publication 2]</li>
+            <li>[Publication 3]</li>
+        </ul>
+    </section>
+
+    <section class="container" id="contact">
+        <h2>Contact</h2>
+        <p>If you're interested in collaborating or learning more about my work, please reach out:</p>
+        <p>Email: [Your Email]</p>
+    </section>
 
     <footer>
-        <p>Copyright © 2024 Sara Savini. All rights reserved.</p>
+        <p>Copyright © [Year] Your Name. All rights reserved.</p>
     </footer>
 </body>
 </html>
